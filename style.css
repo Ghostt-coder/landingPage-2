@@ -14,6 +14,10 @@ section{
     width : 100%;
     /* background-color: lightseagreen; */
 }
+
+section.section-1{
+    margin-bottom : 4rem;
+}
 nav{
     display : flex;
     align-items: center;
@@ -53,10 +57,10 @@ img#star {
 }
 .center{
     /* background-color: crimson; */
-    height : 80%;
+    height : 75%;
     width : 100%;
     display : flex;
-    padding : 75px
+    padding :  50px 75px
 }
 .center-1{
     /* background-color: lightblue; */
@@ -106,4 +110,123 @@ img#star {
 
 img.bigImg {
     height: 30px;
+}
+.services{
+    /* background-color: red; */
+    padding : 40px 75px;
+    display : flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap : 3rem;
+}
+.services h3{
+    background-color: #9AE975;
+    font-size : 25px;
+    padding: 5px
+}
+.services p{
+    width : 50%;
+    font-size : 13px;
+}
+
+.cardsContainer{
+    padding : 40px 75px;
+    display : flex; 
+    flex-wrap :wrap;
+    justify-content: space-between;
+    row-gap: 3rem;
+}
+
+.styleCardWhite{
+    width : 45%;
+    border: 2px solid black;
+    border-radius : 15px;
+    display : flex;
+    height : 16rem;
+    padding : 20px;
+    gap : 3rem;
+    border-bottom: 8px solid black;
+}
+
+.left{
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    width : 50%;
+}
+
+.left h3{
+    font-size : 30px;
+    background-color: #9AE975;
+}
+
+.card-2 .left h3{
+    background-color: white;
+}
+.card-2 .learn p{
+    color : white;
+}
+.card-3 .learn p{
+    color : white;
+}
+.card-3 .left h3{
+    background-color: white;
+}
+
+.learn{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    width : 45%;
+}
+
+.learn img{
+    height : 2rem;
+    border: 1px solid black;
+    border-radius : 50%;
+    background-color: #111;
+}
+
+.card-2 .learn img{
+    background-color: white;
+}
+.card-3 .learn img{
+    background-color: white;
+}
+
+
+
+.right img{
+    height : 100%
+}
+
+.styleCardBlack{
+    width : 45%;
+    border: 2px solid black;
+    border-radius : 15px;
+    display : flex;
+    height : 16rem;
+    padding : 20px;
+    gap : 3rem;
+    background-color: #111;
+    border-bottom: 8px solid black;
+}
+
+.overAllcontainer{
+    display : flex;
+    border : 2px solid black;
+    margin : 10rem 75px;
+    padding : 40px;
+    height : 40%;
+    justify-content: space-between;
+    position: absolute;
+    left : 10%;
+}
+
+.overAllContainer .leftSide{
+    display : flex;
+}
+
+.section-3 .right img{
+    height : 100%;
 }
