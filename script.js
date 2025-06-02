@@ -45,15 +45,60 @@ gsap.from(".section1Bottom img",{
 })
 }
 
+page1Animation()
+
 var tl2 = gsap.timeline({
     scrollTrigger:{
         trigger:".section-2",
-        scroller:"body",
+        start:"top 70%",
+        end:"bottom 20%",
+        scrub:1,
+        // markers:true,
+    }
+});
+tl2.from(".services",{
+    y:30,
+    opacity:0,
+    duration :0.5
+})
+tl2.from(".card-1.leftGsap",{
+    x:-300,
+    duration : 1,
+    opacity : 0,
+},"anim1")                                     //"anim" random word , for same timeline , remove it from both and you can see diff.
+tl2.from(".card-2.rightGsap",{
+    x:300,
+    duration:1,
+    opacity :0,
+},"anim1")
+tl2.from(".card-3.leftGsap",{
+    x:-300,
+    duration : 1,
+    opacity : 0,
+},"anim2")
+tl2.from(".card-4.rightGsap",{
+    x:300,
+    duration:1,
+    opacity :0,
+},"anim2")
+
+
+var tl3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:".section-3",
+        start:"top 30%",
+        end:"top 10%",
+        scrub:1,
         markers:true,
-        start:"top 50%",
     }
 });
 
+tl3.from(".overAllcontainer",{
+    opacity:0,
+    // y:30,
+    duration : 0.5,
+    scale:0
+})
 
 
 // gsap.from(".services h3",{
